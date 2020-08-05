@@ -32,8 +32,7 @@ body {
 }
 
 body {
-  background-color: black;
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 }
