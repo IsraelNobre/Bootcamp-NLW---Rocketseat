@@ -1,7 +1,6 @@
 {
   "name": "Bootcamp-NLW-Rocketseat",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server.js"
@@ -18,9 +17,11 @@
   },
   "homepage": "https://github.com/IsraelNobre/Bootcamp-NLW---Rocketseat#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "description": ""
 }
