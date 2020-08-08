@@ -28,13 +28,22 @@ function pageLanding(req, res){
 function pageStudy(req, res){
   return res.sendFile(__dirname + "/views/study.html")
 }
-function pageGiveClasses(req, res){
+function pageGiveClasses\'[(req, res){
   return res.sendFile(__dirname + "/views/give-classes.html")
 }
 
 const express = require('express')
 const server = express()
-server.use(express.static("public"))
+const nunjucks = require('nunjucks')
+//configurar nunjucks
+nunjucks.configure('src/views'{
+  express: ser
+})
+
+server
+// configurar arquivos estáticos (css,scripts,imagens)
+.use(express.static("public"))
+//rotas da aplicação
 .get("/",pageLanding)
 .get("/study", pageStudy)
 .get("/give-classes",pageGiveClasses)
